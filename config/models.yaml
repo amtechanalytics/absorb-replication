@@ -1,0 +1,30 @@
+# Exact model ids only. Sampling parameters (temperature, top_p) are not allowed: vendor default.
+# accessed: the date the id, its price and its availability were checked.
+# max_output_tokens is the same for every model (8,000) so that no model is cut off earlier than another;
+# reasoning tokens, where a model spends them, count against it.
+models:
+  - id: claude-sonnet-5-5
+    provider: anthropic
+    max_output_tokens: 8000
+    context_tokens: 1000000
+    concurrency: 4
+    tpm_budget: 100000
+    batch: false
+    accessed: "2026-11-16"
+  - id: gpt-6.1-sol
+    provider: openai
+    max_output_tokens: 8000
+    context_tokens: 1050000
+    concurrency: 4
+    tpm_budget: 100000
+    batch: false
+    accessed: "2026-11-16"
+  - id: openai/gpt-oss-120b
+    provider: groq
+    max_output_tokens: 8000
+    context_tokens: 131072
+    concurrency: 4
+    tpm_budget: 150000
+    rpm_budget: 600
+    batch: false
+    accessed: "2026-11-16"

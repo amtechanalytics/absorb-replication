@@ -1,0 +1,36 @@
+# Drives subsampling (pilot/canary) and the pre-run cost projection.
+pilot_per_cell: 1          # cells per (arm, model, source format or wide task) combination in the pilot
+canary_per_cell: 1         # the canary repeats the pilot's combinations with real volume checks
+coverage_dims: [cov]        # fhir_r4, fhir_stu3, claims, d1, d2, d3 for staging tasks; wide for wide-product tasks
+batch_poll_seconds: 60
+stages:
+  gen:                        # first reply: 56 tasks x 3 arms x 2 samples
+    models: [claude-sonnet-5-5, gpt-6.1-sol, openai/gpt-oss-120b]
+    groups_per_model: 21      # 3 arms x 7 combinations (6 source formats + wide)
+    cells_per_model: 336
+    avg_prefix_tokens: 450
+    avg_item_tokens: 5500
+    avg_out_tokens: 2500
+    max_prompt_tokens: 12000
+    batch: false
+    cache: false
+  rep1:                       # repair turn 1 (arms A2, A3), worst case every cell
+    models: [claude-sonnet-5-5, gpt-6.1-sol, openai/gpt-oss-120b]
+    groups_per_model: 14
+    cells_per_model: 224
+    avg_prefix_tokens: 450
+    avg_item_tokens: 8000
+    avg_out_tokens: 2500
+    max_prompt_tokens: 12000
+    batch: false
+    cache: false
+  rep2:                       # repair turn 2 (arms A2, A3), worst case every cell
+    models: [claude-sonnet-5-5, gpt-6.1-sol, openai/gpt-oss-120b]
+    groups_per_model: 14
+    cells_per_model: 224
+    avg_prefix_tokens: 450
+    avg_item_tokens: 8000
+    avg_out_tokens: 2500
+    max_prompt_tokens: 12000
+    batch: false
+    cache: false

@@ -1,0 +1,93 @@
+{
+  "dropped": [
+    {
+      "reason": "reference reproduces 0.815 of gold cells",
+      "task": "stg|fhir_r4|medications"
+    },
+    {
+      "reason": "no gold cells",
+      "task": "stg|fhir_r4|immunizations"
+    },
+    {
+      "reason": "reference reproduces 0.815 of gold cells",
+      "task": "stg|fhir_stu3|medications"
+    },
+    {
+      "reason": "no gold cells",
+      "task": "stg|fhir_stu3|immunizations"
+    },
+    {
+      "reason": "no gold cells",
+      "task": "stg|d1|immunizations"
+    },
+    {
+      "reason": "no gold cells",
+      "task": "stg|d2|immunizations"
+    },
+    {
+      "reason": "no gold cells",
+      "task": "stg|d3|immunizations"
+    },
+    {
+      "reason": "no acquired rows in this family's world",
+      "task": "wide|claims|dp_utilisation_yearly"
+    }
+  ],
+  "engine": {
+    "dbt_core": "1.12.7",
+    "dbt_duckdb": "1.11.1",
+    "duckdb": "2.0.0",
+    "installed_now": true,
+    "mode": "installed"
+  },
+  "generated": {
+    "fhir_r4_files": 688,
+    "fhir_stu3_files": 688,
+    "jar_sha256": "2545128a7a33f807fd03b8a36cfb7e507b36240c237599f4126d57bde505ef36",
+    "patients_generated": 688,
+    "reference_date": "20261101",
+    "requested": 600,
+    "seed": 20261116
+  },
+  "seconds": {
+    "base": 25.0,
+    "controls": 1.4,
+    "empty_worlds": 180.3,
+    "engine": 11.2,
+    "families": 67.9,
+    "format_worlds": 133.3,
+    "generate": 25.1,
+    "gold": 83.7,
+    "gold_claims": 88.6,
+    "pre_and_attribution": 91.1,
+    "refcheck": 60.3,
+    "sources": 6.2,
+    "split": 0.3
+  },
+  "split": {
+    "acquired": 120,
+    "acquirer": 480,
+    "carriers": 83,
+    "generated": 688,
+    "only_codes": {
+      "conditions": [
+        "22253000",
+        "110030002",
+        "427419006",
+        "25064002",
+        "33737001",
+        "185086009"
+      ],
+      "labs": [
+        "19926-5",
+        "33756-8",
+        "57905-2"
+      ]
+    },
+    "unused": 88
+  },
+  "stub": false,
+  "tasks_dropped": 8,
+  "tasks_kept": 48,
+  "tasks_total": 56
+}

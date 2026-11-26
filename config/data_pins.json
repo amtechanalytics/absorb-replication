@@ -1,0 +1,99 @@
+{
+  "pins": [
+    {
+      "name": "dbt_synthea",
+      "record": "33fdbfa9b354f00def5ee6e45525cb2da80e0ddf",
+      "title": "OHDSI dbt-synthea: Synthea to OMOP CDM pipeline in dbt (the acquirer's pipeline; used unmodified)",
+      "url": "https://github.com/OHDSI/dbt-synthea",
+      "file": "dbt_synthea",
+      "format": "git",
+      "min_rows": 87,
+      "expected_rows": 87,
+      "count_glob": "**/*.sql",
+      "count_roots": ["models"],
+      "columns": ["dbt_project.yml", "models/staging/synthea/_synthea__models.yml",
+                  "models/staging/synthea/stg_synthea__patients.sql", "seeds/vocabulary/concept_seed.csv",
+                  "seeds/synthea/patients.csv", "macros/lowercase_columns.sql"],
+      "licence": "Apache-2.0"
+    },
+    {
+      "name": "dbt_utils",
+      "record": "e164c645238ca98f21b2ecc558912b94b3d75a9f",
+      "title": "dbt-utils 1.3.0 (package required by the pipeline)",
+      "url": "https://github.com/dbt-labs/dbt-utils",
+      "file": "dbt_utils",
+      "format": "git",
+      "min_rows": 1,
+      "count_glob": "**/*.sql",
+      "count_roots": ["macros"],
+      "columns": ["dbt_project.yml", "macros"],
+      "licence": "Apache-2.0"
+    },
+    {
+      "name": "dbt_expectations",
+      "record": "8d39e126b8d4888d931883007273ee36ecd1dc30",
+      "title": "dbt-expectations 0.10.8 (package required by the pipeline)",
+      "url": "https://github.com/metaplane/dbt-expectations",
+      "file": "dbt_expectations",
+      "format": "git",
+      "min_rows": 1,
+      "count_glob": "**/*.sql",
+      "count_roots": ["macros"],
+      "columns": ["dbt_project.yml", "macros"],
+      "licence": "Apache-2.0"
+    },
+    {
+      "name": "dbt_date",
+      "record": "560a9ce97807c2027ae90d758af4847ded1d4900",
+      "title": "dbt-date 0.13.0 (package required by the pipeline)",
+      "url": "https://github.com/godatadriven/dbt-date",
+      "file": "dbt_date",
+      "format": "git",
+      "min_rows": 1,
+      "count_glob": "**/*.sql",
+      "count_roots": ["macros"],
+      "columns": ["dbt_project.yml", "macros"],
+      "licence": "Apache-2.0"
+    },
+    {
+      "name": "synthea_jar",
+      "record": "github:synthetichealth/synthea@v3.0.0",
+      "title": "Synthea v3.0.0, synthea-with-dependencies.jar (patient generator)",
+      "url": "https://github.com/synthetichealth/synthea/releases/download/v3.0.0/synthea-with-dependencies.jar",
+      "file": "synthea-with-dependencies.jar",
+      "size": 138572088,
+      "sha256": "2545128a7a33f807fd03b8a36cfb7e507b36240c237599f4126d57bde505ef36",
+      "format": "binary",
+      "min_rows": 1,
+      "columns": [],
+      "licence": "Apache-2.0"
+    },
+    {
+      "name": "jre",
+      "record": "github:adoptium/temurin21-binaries@jdk-21.0.9+10",
+      "title": "Eclipse Temurin JRE 21.0.9+10, Linux x64 (Java runtime for the generator)",
+      "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.9%2B10/OpenJDK21U-jre_x64_linux_hotspot_21.0.9_10.tar.gz",
+      "file": "OpenJDK21U-jre_x64_linux_hotspot_21.0.9_10.tar.gz",
+      "size": 51952734,
+      "sha256": "aeab55d064a1a27a3744b0880b9b414077b4ed2b1790817eea3df60aec946431",
+      "format": "binary",
+      "unpack": "tar.gz",
+      "min_rows": 1,
+      "columns": [],
+      "licence": "GPL-2.0 with Classpath Exception"
+    },
+    {
+      "name": "pip_wheel",
+      "record": "pypi:pip==26.3",
+      "title": "pip 26.3 wheel (installs the pinned SQL engine wheels; the instance's virtual environment has no pip)",
+      "url": "https://files.pythonhosted.org/packages/07/25/ee8c38ae72d66b844ce8eb9711ba905dba21ca1a8a0c960057c41cd23337/pip-26.3-py3-none-any.whl",
+      "file": "pip-26.3-py3-none-any.whl",
+      "size": 1950951,
+      "sha256": "f3b60b20ffaadd4415ed7957212a38ac63fa4c5fa375bd0f4a797777940fad13",
+      "format": "binary",
+      "min_rows": 1,
+      "columns": [],
+      "licence": "MIT"
+    }
+  ]
+}

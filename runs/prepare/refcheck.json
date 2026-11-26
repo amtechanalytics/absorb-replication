@@ -1,0 +1,1793 @@
+{
+ "kept": [
+  "stg|fhir_r4|patients",
+  "stg|fhir_r4|encounters",
+  "stg|fhir_r4|conditions",
+  "stg|fhir_r4|procedures",
+  "stg|fhir_r4|observations",
+  "stg|fhir_r4|allergies",
+  "stg|fhir_stu3|patients",
+  "stg|fhir_stu3|encounters",
+  "stg|fhir_stu3|conditions",
+  "stg|fhir_stu3|procedures",
+  "stg|fhir_stu3|observations",
+  "stg|fhir_stu3|allergies",
+  "stg|claims|patients",
+  "stg|claims|conditions",
+  "stg|claims|procedures",
+  "stg|claims|medications",
+  "stg|d1|patients",
+  "stg|d1|encounters",
+  "stg|d1|conditions",
+  "stg|d1|procedures",
+  "stg|d1|medications",
+  "stg|d1|observations",
+  "stg|d1|allergies",
+  "stg|d2|patients",
+  "stg|d2|encounters",
+  "stg|d2|conditions",
+  "stg|d2|procedures",
+  "stg|d2|medications",
+  "stg|d2|observations",
+  "stg|d2|allergies",
+  "stg|d3|patients",
+  "stg|d3|encounters",
+  "stg|d3|conditions",
+  "stg|d3|procedures",
+  "stg|d3|medications",
+  "stg|d3|observations",
+  "stg|d3|allergies",
+  "wide|fhir|dp_condition_flags",
+  "wide|fhir|dp_latest_labs",
+  "wide|fhir|dp_utilisation_yearly",
+  "wide|fhir|dp_coverage_months",
+  "wide|claims|dp_condition_flags",
+  "wide|claims|dp_latest_labs",
+  "wide|claims|dp_coverage_months",
+  "wide|dialect|dp_condition_flags",
+  "wide|dialect|dp_latest_labs",
+  "wide|dialect|dp_utilisation_yearly",
+  "wide|dialect|dp_coverage_months"
+ ],
+ "dropped": [
+  {
+   "task": "stg|fhir_r4|medications",
+   "reason": "reference reproduces 0.815 of gold cells"
+  },
+  {
+   "task": "stg|fhir_r4|immunizations",
+   "reason": "no gold cells"
+  },
+  {
+   "task": "stg|fhir_stu3|medications",
+   "reason": "reference reproduces 0.815 of gold cells"
+  },
+  {
+   "task": "stg|fhir_stu3|immunizations",
+   "reason": "no gold cells"
+  },
+  {
+   "task": "stg|d1|immunizations",
+   "reason": "no gold cells"
+  },
+  {
+   "task": "stg|d2|immunizations",
+   "reason": "no gold cells"
+  },
+  {
+   "task": "stg|d3|immunizations",
+   "reason": "no gold cells"
+  },
+  {
+   "task": "wide|claims|dp_utilisation_yearly",
+   "reason": "no acquired rows in this family's world"
+  }
+ ],
+ "detail": {
+  "stg|fhir_r4|patients": {
+   "gold_cells": 1852119,
+   "reproduced": 1807719,
+   "share": 0.976,
+   "format_unrecoverable": 0,
+   "reference_extra_cells": 24030,
+   "tables": {
+    "person": {
+     "gold_rows": 120,
+     "gold_cells": 2160,
+     "reproduced": 2040,
+     "extra_rows": 0
+    },
+    "death": {
+     "gold_rows": 7,
+     "gold_cells": 49,
+     "reproduced": 49,
+     "extra_rows": 0
+    },
+    "visit_occurrence": {
+     "gold_rows": 7456,
+     "gold_cells": 119296,
+     "reproduced": 117573,
+     "extra_rows": 0
+    },
+    "visit_detail": {
+     "gold_rows": 7481,
+     "gold_cells": 134658,
+     "reproduced": 131644,
+     "extra_rows": 0
+    },
+    "condition_occurrence": {
+     "gold_rows": 698,
+     "gold_cells": 10470,
+     "reproduced": 10417,
+     "extra_rows": 0
+    },
+    "procedure_occurrence": {
+     "gold_rows": 4203,
+     "gold_cells": 63045,
+     "reproduced": 62036,
+     "extra_rows": 0
+    },
+    "drug_exposure": {
+     "gold_rows": 4547,
+     "gold_cells": 100034,
+     "reproduced": 81599,
+     "extra_rows": 0
+    },
+    "measurement": {
+     "gold_rows": 32433,
+     "gold_cells": 713526,
+     "reproduced": 704523,
+     "extra_rows": 0
+    },
+    "observation": {
+     "gold_rows": 33790,
+     "gold_cells": 675800,
+     "reproduced": 665270,
+     "extra_rows": 0
+    },
+    "observation_period": {
+     "gold_rows": 120,
+     "gold_cells": 480,
+     "reproduced": 480,
+     "extra_rows": 0
+    },
+    "condition_era": {
+     "gold_rows": 698,
+     "gold_cells": 3490,
+     "reproduced": 3490,
+     "extra_rows": 0
+    },
+    "drug_era": {
+     "gold_rows": 376,
+     "gold_cells": 2256,
+     "reproduced": 1786,
+     "extra_rows": 4005
+    },
+    "dp_condition_flags": {
+     "gold_rows": 120,
+     "gold_cells": 4320,
+     "reproduced": 4320,
+     "extra_rows": 0
+    },
+    "dp_latest_labs": {
+     "gold_rows": 120,
+     "gold_cells": 4080,
+     "reproduced": 4037,
+     "extra_rows": 0
+    },
+    "dp_utilisation_yearly": {
+     "gold_rows": 3427,
+     "gold_cells": 17135,
+     "reproduced": 17135,
+     "extra_rows": 0
+    },
+    "dp_coverage_months": {
+     "gold_rows": 120,
+     "gold_cells": 1320,
+     "reproduced": 1320,
+     "extra_rows": 0
+    }
+   }
+  },
+  "stg|fhir_r4|encounters": {
+   "gold_cells": 1834493,
+   "reproduced": 1790726,
+   "share": 0.9761,
+   "format_unrecoverable": 0,
+   "reference_extra_cells": 0,
+   "tables": {
+    "death": {
+     "gold_rows": 7,
+     "gold_cells": 49,
+     "reproduced": 49,
+     "extra_rows": 0
+    },
+    "visit_occurrence": {
+     "gold_rows": 7456,
+     "gold_cells": 119296,
+     "reproduced": 117573,
+     "extra_rows": 0
+    },
+    "visit_detail": {
+     "gold_rows": 7481,
+     "gold_cells": 134658,
+     "reproduced": 131644,
+     "extra_rows": 0
+    },
+    "condition_occurrence": {
+     "gold_rows": 698,
+     "gold_cells": 10470,
+     "reproduced": 10417,
+     "extra_rows": 0
+    },
+    "procedure_occurrence": {
+     "gold_rows": 4203,
+     "gold_cells": 63045,
+     "reproduced": 62036,
+     "extra_rows": 0
+    },
+    "drug_exposure": {
+     "gold_rows": 4547,
+     "gold_cells": 100034,
+     "reproduced": 81599,
+     "extra_rows": 0
+    },
+    "measurement": {
+     "gold_rows": 32433,
+     "gold_cells": 713526,
+     "reproduced": 704523,
+     "extra_rows": 0
+    },
+    "observation": {
+     "gold_rows": 33790,
+     "gold_cells": 675800,
+     "reproduced": 665270,
+     "extra_rows": 0
+    },
+    "observation_period": {
+     "gold_rows": 120,
+     "gold_cells": 480,
+     "reproduced": 480,
+     "extra_rows": 0
+    },
+    "dp_utilisation_yearly": {
+     "gold_rows": 3427,
+     "gold_cells": 17135,
+     "reproduced": 17135,
+     "extra_rows": 0
+    }
+   }
+  },
+  "stg|fhir_r4|conditions": {
+   "gold_cells": 98368,
+   "reproduced": 97132,
+   "share": 0.9874,
+   "format_unrecoverable": 0,
+   "reference_extra_cells": 0,
+   "tables": {
+    "condition_occurrence": {
+     "gold_rows": 698,
+     "gold_cells": 10470,
+     "reproduced": 10417,
+     "extra_rows": 0
+    },
+    "observation": {
+     "gold_rows": 4008,
+     "gold_cells": 80160,
+     "reproduced": 78977,
+     "extra_rows": 0
+    },
+    "condition_era": {
+     "gold_rows": 698,
+     "gold_cells": 3490,
+     "reproduced": 3490,
+     "extra_rows": 0
+    },
+    "dp_condition_flags": {
+     "gold_rows": 118,
+     "gold_cells": 4248,
+     "reproduced": 4248,
+     "extra_rows": 0
+    }
+   }
+  },
+  "stg|fhir_r4|procedures": {
+   "gold_cells": 153223,
+   "reproduced": 151099,
+   "share": 0.9861,
+   "format_unrecoverable": 0,
+   "reference_extra_cells": 0,
+   "tables": {
+    "procedure_occurrence": {
+     "gold_rows": 4203,
+     "gold_cells": 63045,
+     "reproduced": 62036,
+     "extra_rows": 0
+    },
+    "measurement": {
+     "gold_rows": 4099,
+     "gold_cells": 90178,
+     "reproduced": 89063,
+     "extra_rows": 0
+    }
+   }
+  },
+  "stg|fhir_r4|medications": {
+   "gold_cells": 102290,
+   "reproduced": 83385,
+   "share": 0.8152,
+   "format_unrecoverable": 0,
+   "reference_extra_cells": 24030,
+   "tables": {
+    "drug_exposure": {
+     "gold_rows": 4547,
+     "gold_cells": 100034,
+     "reproduced": 81599,
+     "extra_rows": 0
+    },
+    "drug_era": {
+     "gold_rows": 376,
+     "gold_cells": 2256,
+     "reproduced": 1786,
+     "extra_rows": 4005
+    }
+   }
+  },
+  "stg|fhir_r4|observations": {
+   "gold_cells": 1222028,
+   "reproduced": 1204750,
+   "share": 0.9859,
+   "format_unrecoverable": 0,
+   "reference_extra_cells": 0,
+   "tables": {
+    "measurement": {
+     "gold_rows": 28334,
+     "gold_cells": 623348,
+     "reproduced": 615460,
+     "extra_rows": 0
+    },
+    "observation": {
+     "gold_rows": 29730,
+     "gold_cells": 594600,
+     "reproduced": 585253,
+     "extra_rows": 0
+    },
+    "dp_latest_labs": {
+     "gold_rows": 120,
+     "gold_cells": 4080,
+     "reproduced": 4037,
+     "extra_rows": 0
+    }
+   }
+  },
+  "stg|fhir_r4|immunizations": {
+   "gold_cells": 0,
+   "reproduced": 0,
+   "share": 0.0,
+   "format_unrecoverable": 0,
+   "reference_extra_cells": 0,
+   "tables": {}
+  },
+  "stg|fhir_r4|allergies": {
+   "gold_cells": 1040,
+   "reproduced": 1040,
+   "share": 1.0,
+   "format_unrecoverable": 0,
+   "reference_extra_cells": 0,
+   "tables": {
+    "observation": {
+     "gold_rows": 52,
+     "gold_cells": 1040,
+     "reproduced": 1040,
+     "extra_rows": 0
+    }
+   }
+  },
+  "stg|fhir_stu3|patients": {
+   "gold_cells": 1852119,
+   "reproduced": 1807719,
+   "share": 0.976,
+   "format_unrecoverable": 0,
+   "reference_extra_cells": 24030,
+   "tables": {
+    "person": {
+     "gold_rows": 120,
+     "gold_cells": 2160,
+     "reproduced": 2040,
+     "extra_rows": 0
+    },
+    "death": {
+     "gold_rows": 7,
+     "gold_cells": 49,
+     "reproduced": 49,
+     "extra_rows": 0
+    },
+    "visit_occurrence": {
+     "gold_rows": 7456,
+     "gold_cells": 119296,
+     "reproduced": 117573,
+     "extra_rows": 0
+    },
+    "visit_detail": {
+     "gold_rows": 7481,
+     "gold_cells": 134658,
+     "reproduced": 131644,
+     "extra_rows": 0
+    },
+    "condition_occurrence": {
+     "gold_rows": 698,
+     "gold_cells": 10470,
+     "reproduced": 10417,
+     "extra_rows": 0
+    },
+    "procedure_occurrence": {
+     "gold_rows": 4203,
+     "gold_cells": 63045,
+     "reproduced": 62036,
+     "extra_rows": 0
+    },
+    "drug_exposure": {
+     "gold_rows": 4547,
+     "gold_cells": 100034,
+     "reproduced": 81599,
+     "extra_rows": 0
+    },
+    "measurement": {
+     "gold_rows": 32433,
+     "gold_cells": 713526,
+     "reproduced": 704523,
+     "extra_rows": 0
+    },
+    "observation": {
+     "gold_rows": 33790,
+     "gold_cells": 675800,
+     "reproduced": 665270,
+     "extra_rows": 0
+    },
+    "observation_period": {
+     "gold_rows": 120,
+     "gold_cells": 480,
+     "reproduced": 480,
+     "extra_rows": 0
+    },
+    "condition_era": {
+     "gold_rows": 698,
+     "gold_cells": 3490,
+     "reproduced": 3490,
+     "extra_rows": 0
+    },
+    "drug_era": {
+     "gold_rows": 376,
+     "gold_cells": 2256,
+     "reproduced": 1786,
+     "extra_rows": 4005
+    },
+    "dp_condition_flags": {
+     "gold_rows": 120,
+     "gold_cells": 4320,
+     "reproduced": 4320,
+     "extra_rows": 0
+    },
+    "dp_latest_labs": {
+     "gold_rows": 120,
+     "gold_cells": 4080,
+     "reproduced": 4037,
+     "extra_rows": 0
+    },
+    "dp_utilisation_yearly": {
+     "gold_rows": 3427,
+     "gold_cells": 17135,
+     "reproduced": 17135,
+     "extra_rows": 0
+    },
+    "dp_coverage_months": {
+     "gold_rows": 120,
+     "gold_cells": 1320,
+     "reproduced": 1320,
+     "extra_rows": 0
+    }
+   }
+  },
+  "stg|fhir_stu3|encounters": {
+   "gold_cells": 1834493,
+   "reproduced": 1790726,
+   "share": 0.9761,
+   "format_unrecoverable": 0,
+   "reference_extra_cells": 0,
+   "tables": {
+    "death": {
+     "gold_rows": 7,
+     "gold_cells": 49,
+     "reproduced": 49,
+     "extra_rows": 0
+    },
+    "visit_occurrence": {
+     "gold_rows": 7456,
+     "gold_cells": 119296,
+     "reproduced": 117573,
+     "extra_rows": 0
+    },
+    "visit_detail": {
+     "gold_rows": 7481,
+     "gold_cells": 134658,
+     "reproduced": 131644,
+     "extra_rows": 0
+    },
+    "condition_occurrence": {
+     "gold_rows": 698,
+     "gold_cells": 10470,
+     "reproduced": 10417,
+     "extra_rows": 0
+    },
+    "procedure_occurrence": {
+     "gold_rows": 4203,
+     "gold_cells": 63045,
+     "reproduced": 62036,
+     "extra_rows": 0
+    },
+    "drug_exposure": {
+     "gold_rows": 4547,
+     "gold_cells": 100034,
+     "reproduced": 81599,
+     "extra_rows": 0
+    },
+    "measurement": {
+     "gold_rows": 32433,
+     "gold_cells": 713526,
+     "reproduced": 704523,
+     "extra_rows": 0
+    },
+    "observation": {
+     "gold_rows": 33790,
+     "gold_cells": 675800,
+     "reproduced": 665270,
+     "extra_rows": 0
+    },
+    "observation_period": {
+     "gold_rows": 120,
+     "gold_cells": 480,
+     "reproduced": 480,
+     "extra_rows": 0
+    },
+    "dp_utilisation_yearly": {
+     "gold_rows": 3427,
+     "gold_cells": 17135,
+     "reproduced": 17135,
+     "extra_rows": 0
+    }
+   }
+  },
+  "stg|fhir_stu3|conditions": {
+   "gold_cells": 98368,
+   "reproduced": 97132,
+   "share": 0.9874,
+   "format_unrecoverable": 0,
+   "reference_extra_cells": 0,
+   "tables": {
+    "condition_occurrence": {
+     "gold_rows": 698,
+     "gold_cells": 10470,
+     "reproduced": 10417,
+     "extra_rows": 0
+    },
+    "observation": {
+     "gold_rows": 4008,
+     "gold_cells": 80160,
+     "reproduced": 78977,
+     "extra_rows": 0
+    },
+    "condition_era": {
+     "gold_rows": 698,
+     "gold_cells": 3490,
+     "reproduced": 3490,
+     "extra_rows": 0
+    },
+    "dp_condition_flags": {
+     "gold_rows": 118,
+     "gold_cells": 4248,
+     "reproduced": 4248,
+     "extra_rows": 0
+    }
+   }
+  },
+  "stg|fhir_stu3|procedures": {
+   "gold_cells": 153223,
+   "reproduced": 151099,
+   "share": 0.9861,
+   "format_unrecoverable": 0,
+   "reference_extra_cells": 0,
+   "tables": {
+    "procedure_occurrence": {
+     "gold_rows": 4203,
+     "gold_cells": 63045,
+     "reproduced": 62036,
+     "extra_rows": 0
+    },
+    "measurement": {
+     "gold_rows": 4099,
+     "gold_cells": 90178,
+     "reproduced": 89063,
+     "extra_rows": 0
+    }
+   }
+  },
+  "stg|fhir_stu3|medications": {
+   "gold_cells": 102290,
+   "reproduced": 83385,
+   "share": 0.8152,
+   "format_unrecoverable": 0,
+   "reference_extra_cells": 24030,
+   "tables": {
+    "drug_exposure": {
+     "gold_rows": 4547,
+     "gold_cells": 100034,
+     "reproduced": 81599,
+     "extra_rows": 0
+    },
+    "drug_era": {
+     "gold_rows": 376,
+     "gold_cells": 2256,
+     "reproduced": 1786,
+     "extra_rows": 4005
+    }
+   }
+  },
+  "stg|fhir_stu3|observations": {
+   "gold_cells": 1222028,
+   "reproduced": 1204750,
+   "share": 0.9859,
+   "format_unrecoverable": 0,
+   "reference_extra_cells": 0,
+   "tables": {
+    "measurement": {
+     "gold_rows": 28334,
+     "gold_cells": 623348,
+     "reproduced": 615460,
+     "extra_rows": 0
+    },
+    "observation": {
+     "gold_rows": 29730,
+     "gold_cells": 594600,
+     "reproduced": 585253,
+     "extra_rows": 0
+    },
+    "dp_latest_labs": {
+     "gold_rows": 120,
+     "gold_cells": 4080,
+     "reproduced": 4037,
+     "extra_rows": 0
+    }
+   }
+  },
+  "stg|fhir_stu3|immunizations": {
+   "gold_cells": 0,
+   "reproduced": 0,
+   "share": 0.0,
+   "format_unrecoverable": 0,
+   "reference_extra_cells": 0,
+   "tables": {}
+  },
+  "stg|fhir_stu3|allergies": {
+   "gold_cells": 1040,
+   "reproduced": 1040,
+   "share": 1.0,
+   "format_unrecoverable": 0,
+   "reference_extra_cells": 0,
+   "tables": {
+    "observation": {
+     "gold_rows": 52,
+     "gold_cells": 1040,
+     "reproduced": 1040,
+     "extra_rows": 0
+    }
+   }
+  },
+  "stg|claims|patients": {
+   "gold_cells": 260360,
+   "reproduced": 258346,
+   "share": 0.9923,
+   "format_unrecoverable": 101153,
+   "reference_extra_cells": 38618,
+   "tables": {
+    "person": {
+     "gold_rows": 120,
+     "gold_cells": 1920,
+     "reproduced": 1920,
+     "extra_rows": 0
+    },
+    "condition_occurrence": {
+     "gold_rows": 698,
+     "gold_cells": 7678,
+     "reproduced": 7678,
+     "extra_rows": 2485
+    },
+    "procedure_occurrence": {
+     "gold_rows": 4203,
+     "gold_cells": 37827,
+     "reproduced": 37827,
+     "extra_rows": 0
+    },
+    "drug_exposure": {
+     "gold_rows": 4547,
+     "gold_cells": 63658,
+     "reproduced": 63658,
+     "extra_rows": 0
+    },
+    "measurement": {
+     "gold_rows": 4099,
+     "gold_cells": 69683,
+     "reproduced": 69683,
+     "extra_rows": 0
+    },
+    "observation": {
+     "gold_rows": 4008,
+     "gold_cells": 64128,
+     "reproduced": 64128,
+     "extra_rows": 223
+    },
+    "condition_era": {
+     "gold_rows": 698,
+     "gold_cells": 3490,
+     "reproduced": 1913,
+     "extra_rows": 1543
+    },
+    "drug_era": {
+     "gold_rows": 376,
+     "gold_cells": 2256,
+     "reproduced": 1825,
+     "extra_rows": 0
+    },
+    "dp_condition_flags": {
+     "gold_rows": 120,
+     "gold_cells": 4320,
+     "reproduced": 4314,
+     "extra_rows": 0
+    },
+    "dp_latest_labs": {
+     "gold_rows": 120,
+     "gold_cells": 4080,
+     "reproduced": 4080,
+     "extra_rows": 0
+    },
+    "dp_coverage_months": {
+     "gold_rows": 120,
+     "gold_cells": 1320,
+     "reproduced": 1320,
+     "extra_rows": 0
+    }
+   }
+  },
+  "stg|claims|conditions": {
+   "gold_cells": 79544,
+   "reproduced": 77961,
+   "share": 0.9801,
+   "format_unrecoverable": 18824,
+   "reference_extra_cells": 38618,
+   "tables": {
+    "condition_occurrence": {
+     "gold_rows": 698,
+     "gold_cells": 7678,
+     "reproduced": 7678,
+     "extra_rows": 2485
+    },
+    "observation": {
+     "gold_rows": 4008,
+     "gold_cells": 64128,
+     "reproduced": 64128,
+     "extra_rows": 223
+    },
+    "condition_era": {
+     "gold_rows": 698,
+     "gold_cells": 3490,
+     "reproduced": 1913,
+     "extra_rows": 1543
+    },
+    "dp_condition_flags": {
+     "gold_rows": 118,
+     "gold_cells": 4248,
+     "reproduced": 4242,
+     "extra_rows": 0
+    }
+   }
+  },
+  "stg|claims|procedures": {
+   "gold_cells": 107510,
+   "reproduced": 107510,
+   "share": 1.0,
+   "format_unrecoverable": 45713,
+   "reference_extra_cells": 0,
+   "tables": {
+    "procedure_occurrence": {
+     "gold_rows": 4203,
+     "gold_cells": 37827,
+     "reproduced": 37827,
+     "extra_rows": 0
+    },
+    "measurement": {
+     "gold_rows": 4099,
+     "gold_cells": 69683,
+     "reproduced": 69683,
+     "extra_rows": 0
+    }
+   }
+  },
+  "stg|claims|medications": {
+   "gold_cells": 65914,
+   "reproduced": 65483,
+   "share": 0.9935,
+   "format_unrecoverable": 36376,
+   "reference_extra_cells": 0,
+   "tables": {
+    "drug_exposure": {
+     "gold_rows": 4547,
+     "gold_cells": 63658,
+     "reproduced": 63658,
+     "extra_rows": 0
+    },
+    "drug_era": {
+     "gold_rows": 376,
+     "gold_cells": 2256,
+     "reproduced": 1825,
+     "extra_rows": 0
+    }
+   }
+  },
+  "stg|d1|patients": {
+   "gold_cells": 1852119,
+   "reproduced": 1852119,
+   "share": 1.0,
+   "format_unrecoverable": 0,
+   "reference_extra_cells": 0,
+   "tables": {
+    "person": {
+     "gold_rows": 120,
+     "gold_cells": 2160,
+     "reproduced": 2160,
+     "extra_rows": 0
+    },
+    "death": {
+     "gold_rows": 7,
+     "gold_cells": 49,
+     "reproduced": 49,
+     "extra_rows": 0
+    },
+    "visit_occurrence": {
+     "gold_rows": 7456,
+     "gold_cells": 119296,
+     "reproduced": 119296,
+     "extra_rows": 0
+    },
+    "visit_detail": {
+     "gold_rows": 7481,
+     "gold_cells": 134658,
+     "reproduced": 134658,
+     "extra_rows": 0
+    },
+    "condition_occurrence": {
+     "gold_rows": 698,
+     "gold_cells": 10470,
+     "reproduced": 10470,
+     "extra_rows": 0
+    },
+    "procedure_occurrence": {
+     "gold_rows": 4203,
+     "gold_cells": 63045,
+     "reproduced": 63045,
+     "extra_rows": 0
+    },
+    "drug_exposure": {
+     "gold_rows": 4547,
+     "gold_cells": 100034,
+     "reproduced": 100034,
+     "extra_rows": 0
+    },
+    "measurement": {
+     "gold_rows": 32433,
+     "gold_cells": 713526,
+     "reproduced": 713526,
+     "extra_rows": 0
+    },
+    "observation": {
+     "gold_rows": 33790,
+     "gold_cells": 675800,
+     "reproduced": 675800,
+     "extra_rows": 0
+    },
+    "observation_period": {
+     "gold_rows": 120,
+     "gold_cells": 480,
+     "reproduced": 480,
+     "extra_rows": 0
+    },
+    "condition_era": {
+     "gold_rows": 698,
+     "gold_cells": 3490,
+     "reproduced": 3490,
+     "extra_rows": 0
+    },
+    "drug_era": {
+     "gold_rows": 376,
+     "gold_cells": 2256,
+     "reproduced": 2256,
+     "extra_rows": 0
+    },
+    "dp_condition_flags": {
+     "gold_rows": 120,
+     "gold_cells": 4320,
+     "reproduced": 4320,
+     "extra_rows": 0
+    },
+    "dp_latest_labs": {
+     "gold_rows": 120,
+     "gold_cells": 4080,
+     "reproduced": 4080,
+     "extra_rows": 0
+    },
+    "dp_utilisation_yearly": {
+     "gold_rows": 3427,
+     "gold_cells": 17135,
+     "reproduced": 17135,
+     "extra_rows": 0
+    },
+    "dp_coverage_months": {
+     "gold_rows": 120,
+     "gold_cells": 1320,
+     "reproduced": 1320,
+     "extra_rows": 0
+    }
+   }
+  },
+  "stg|d1|encounters": {
+   "gold_cells": 1834493,
+   "reproduced": 1834493,
+   "share": 1.0,
+   "format_unrecoverable": 0,
+   "reference_extra_cells": 0,
+   "tables": {
+    "death": {
+     "gold_rows": 7,
+     "gold_cells": 49,
+     "reproduced": 49,
+     "extra_rows": 0
+    },
+    "visit_occurrence": {
+     "gold_rows": 7456,
+     "gold_cells": 119296,
+     "reproduced": 119296,
+     "extra_rows": 0
+    },
+    "visit_detail": {
+     "gold_rows": 7481,
+     "gold_cells": 134658,
+     "reproduced": 134658,
+     "extra_rows": 0
+    },
+    "condition_occurrence": {
+     "gold_rows": 698,
+     "gold_cells": 10470,
+     "reproduced": 10470,
+     "extra_rows": 0
+    },
+    "procedure_occurrence": {
+     "gold_rows": 4203,
+     "gold_cells": 63045,
+     "reproduced": 63045,
+     "extra_rows": 0
+    },
+    "drug_exposure": {
+     "gold_rows": 4547,
+     "gold_cells": 100034,
+     "reproduced": 100034,
+     "extra_rows": 0
+    },
+    "measurement": {
+     "gold_rows": 32433,
+     "gold_cells": 713526,
+     "reproduced": 713526,
+     "extra_rows": 0
+    },
+    "observation": {
+     "gold_rows": 33790,
+     "gold_cells": 675800,
+     "reproduced": 675800,
+     "extra_rows": 0
+    },
+    "observation_period": {
+     "gold_rows": 120,
+     "gold_cells": 480,
+     "reproduced": 480,
+     "extra_rows": 0
+    },
+    "dp_utilisation_yearly": {
+     "gold_rows": 3427,
+     "gold_cells": 17135,
+     "reproduced": 17135,
+     "extra_rows": 0
+    }
+   }
+  },
+  "stg|d1|conditions": {
+   "gold_cells": 98368,
+   "reproduced": 98368,
+   "share": 1.0,
+   "format_unrecoverable": 0,
+   "reference_extra_cells": 0,
+   "tables": {
+    "condition_occurrence": {
+     "gold_rows": 698,
+     "gold_cells": 10470,
+     "reproduced": 10470,
+     "extra_rows": 0
+    },
+    "observation": {
+     "gold_rows": 4008,
+     "gold_cells": 80160,
+     "reproduced": 80160,
+     "extra_rows": 0
+    },
+    "condition_era": {
+     "gold_rows": 698,
+     "gold_cells": 3490,
+     "reproduced": 3490,
+     "extra_rows": 0
+    },
+    "dp_condition_flags": {
+     "gold_rows": 118,
+     "gold_cells": 4248,
+     "reproduced": 4248,
+     "extra_rows": 0
+    }
+   }
+  },
+  "stg|d1|procedures": {
+   "gold_cells": 153223,
+   "reproduced": 153223,
+   "share": 1.0,
+   "format_unrecoverable": 0,
+   "reference_extra_cells": 0,
+   "tables": {
+    "procedure_occurrence": {
+     "gold_rows": 4203,
+     "gold_cells": 63045,
+     "reproduced": 63045,
+     "extra_rows": 0
+    },
+    "measurement": {
+     "gold_rows": 4099,
+     "gold_cells": 90178,
+     "reproduced": 90178,
+     "extra_rows": 0
+    }
+   }
+  },
+  "stg|d1|medications": {
+   "gold_cells": 102290,
+   "reproduced": 102290,
+   "share": 1.0,
+   "format_unrecoverable": 0,
+   "reference_extra_cells": 0,
+   "tables": {
+    "drug_exposure": {
+     "gold_rows": 4547,
+     "gold_cells": 100034,
+     "reproduced": 100034,
+     "extra_rows": 0
+    },
+    "drug_era": {
+     "gold_rows": 376,
+     "gold_cells": 2256,
+     "reproduced": 2256,
+     "extra_rows": 0
+    }
+   }
+  },
+  "stg|d1|observations": {
+   "gold_cells": 1222028,
+   "reproduced": 1222028,
+   "share": 1.0,
+   "format_unrecoverable": 0,
+   "reference_extra_cells": 0,
+   "tables": {
+    "measurement": {
+     "gold_rows": 28334,
+     "gold_cells": 623348,
+     "reproduced": 623348,
+     "extra_rows": 0
+    },
+    "observation": {
+     "gold_rows": 29730,
+     "gold_cells": 594600,
+     "reproduced": 594600,
+     "extra_rows": 0
+    },
+    "dp_latest_labs": {
+     "gold_rows": 120,
+     "gold_cells": 4080,
+     "reproduced": 4080,
+     "extra_rows": 0
+    }
+   }
+  },
+  "stg|d1|immunizations": {
+   "gold_cells": 0,
+   "reproduced": 0,
+   "share": 0.0,
+   "format_unrecoverable": 0,
+   "reference_extra_cells": 0,
+   "tables": {}
+  },
+  "stg|d1|allergies": {
+   "gold_cells": 1040,
+   "reproduced": 1040,
+   "share": 1.0,
+   "format_unrecoverable": 0,
+   "reference_extra_cells": 0,
+   "tables": {
+    "observation": {
+     "gold_rows": 52,
+     "gold_cells": 1040,
+     "reproduced": 1040,
+     "extra_rows": 0
+    }
+   }
+  },
+  "stg|d2|patients": {
+   "gold_cells": 1852119,
+   "reproduced": 1852119,
+   "share": 1.0,
+   "format_unrecoverable": 0,
+   "reference_extra_cells": 0,
+   "tables": {
+    "person": {
+     "gold_rows": 120,
+     "gold_cells": 2160,
+     "reproduced": 2160,
+     "extra_rows": 0
+    },
+    "death": {
+     "gold_rows": 7,
+     "gold_cells": 49,
+     "reproduced": 49,
+     "extra_rows": 0
+    },
+    "visit_occurrence": {
+     "gold_rows": 7456,
+     "gold_cells": 119296,
+     "reproduced": 119296,
+     "extra_rows": 0
+    },
+    "visit_detail": {
+     "gold_rows": 7481,
+     "gold_cells": 134658,
+     "reproduced": 134658,
+     "extra_rows": 0
+    },
+    "condition_occurrence": {
+     "gold_rows": 698,
+     "gold_cells": 10470,
+     "reproduced": 10470,
+     "extra_rows": 0
+    },
+    "procedure_occurrence": {
+     "gold_rows": 4203,
+     "gold_cells": 63045,
+     "reproduced": 63045,
+     "extra_rows": 0
+    },
+    "drug_exposure": {
+     "gold_rows": 4547,
+     "gold_cells": 100034,
+     "reproduced": 100034,
+     "extra_rows": 0
+    },
+    "measurement": {
+     "gold_rows": 32433,
+     "gold_cells": 713526,
+     "reproduced": 713526,
+     "extra_rows": 0
+    },
+    "observation": {
+     "gold_rows": 33790,
+     "gold_cells": 675800,
+     "reproduced": 675800,
+     "extra_rows": 0
+    },
+    "observation_period": {
+     "gold_rows": 120,
+     "gold_cells": 480,
+     "reproduced": 480,
+     "extra_rows": 0
+    },
+    "condition_era": {
+     "gold_rows": 698,
+     "gold_cells": 3490,
+     "reproduced": 3490,
+     "extra_rows": 0
+    },
+    "drug_era": {
+     "gold_rows": 376,
+     "gold_cells": 2256,
+     "reproduced": 2256,
+     "extra_rows": 0
+    },
+    "dp_condition_flags": {
+     "gold_rows": 120,
+     "gold_cells": 4320,
+     "reproduced": 4320,
+     "extra_rows": 0
+    },
+    "dp_latest_labs": {
+     "gold_rows": 120,
+     "gold_cells": 4080,
+     "reproduced": 4080,
+     "extra_rows": 0
+    },
+    "dp_utilisation_yearly": {
+     "gold_rows": 3427,
+     "gold_cells": 17135,
+     "reproduced": 17135,
+     "extra_rows": 0
+    },
+    "dp_coverage_months": {
+     "gold_rows": 120,
+     "gold_cells": 1320,
+     "reproduced": 1320,
+     "extra_rows": 0
+    }
+   }
+  },
+  "stg|d2|encounters": {
+   "gold_cells": 1834493,
+   "reproduced": 1834493,
+   "share": 1.0,
+   "format_unrecoverable": 0,
+   "reference_extra_cells": 0,
+   "tables": {
+    "death": {
+     "gold_rows": 7,
+     "gold_cells": 49,
+     "reproduced": 49,
+     "extra_rows": 0
+    },
+    "visit_occurrence": {
+     "gold_rows": 7456,
+     "gold_cells": 119296,
+     "reproduced": 119296,
+     "extra_rows": 0
+    },
+    "visit_detail": {
+     "gold_rows": 7481,
+     "gold_cells": 134658,
+     "reproduced": 134658,
+     "extra_rows": 0
+    },
+    "condition_occurrence": {
+     "gold_rows": 698,
+     "gold_cells": 10470,
+     "reproduced": 10470,
+     "extra_rows": 0
+    },
+    "procedure_occurrence": {
+     "gold_rows": 4203,
+     "gold_cells": 63045,
+     "reproduced": 63045,
+     "extra_rows": 0
+    },
+    "drug_exposure": {
+     "gold_rows": 4547,
+     "gold_cells": 100034,
+     "reproduced": 100034,
+     "extra_rows": 0
+    },
+    "measurement": {
+     "gold_rows": 32433,
+     "gold_cells": 713526,
+     "reproduced": 713526,
+     "extra_rows": 0
+    },
+    "observation": {
+     "gold_rows": 33790,
+     "gold_cells": 675800,
+     "reproduced": 675800,
+     "extra_rows": 0
+    },
+    "observation_period": {
+     "gold_rows": 120,
+     "gold_cells": 480,
+     "reproduced": 480,
+     "extra_rows": 0
+    },
+    "dp_utilisation_yearly": {
+     "gold_rows": 3427,
+     "gold_cells": 17135,
+     "reproduced": 17135,
+     "extra_rows": 0
+    }
+   }
+  },
+  "stg|d2|conditions": {
+   "gold_cells": 98368,
+   "reproduced": 98368,
+   "share": 1.0,
+   "format_unrecoverable": 0,
+   "reference_extra_cells": 0,
+   "tables": {
+    "condition_occurrence": {
+     "gold_rows": 698,
+     "gold_cells": 10470,
+     "reproduced": 10470,
+     "extra_rows": 0
+    },
+    "observation": {
+     "gold_rows": 4008,
+     "gold_cells": 80160,
+     "reproduced": 80160,
+     "extra_rows": 0
+    },
+    "condition_era": {
+     "gold_rows": 698,
+     "gold_cells": 3490,
+     "reproduced": 3490,
+     "extra_rows": 0
+    },
+    "dp_condition_flags": {
+     "gold_rows": 118,
+     "gold_cells": 4248,
+     "reproduced": 4248,
+     "extra_rows": 0
+    }
+   }
+  },
+  "stg|d2|procedures": {
+   "gold_cells": 153223,
+   "reproduced": 153223,
+   "share": 1.0,
+   "format_unrecoverable": 0,
+   "reference_extra_cells": 0,
+   "tables": {
+    "procedure_occurrence": {
+     "gold_rows": 4203,
+     "gold_cells": 63045,
+     "reproduced": 63045,
+     "extra_rows": 0
+    },
+    "measurement": {
+     "gold_rows": 4099,
+     "gold_cells": 90178,
+     "reproduced": 90178,
+     "extra_rows": 0
+    }
+   }
+  },
+  "stg|d2|medications": {
+   "gold_cells": 102290,
+   "reproduced": 102290,
+   "share": 1.0,
+   "format_unrecoverable": 0,
+   "reference_extra_cells": 0,
+   "tables": {
+    "drug_exposure": {
+     "gold_rows": 4547,
+     "gold_cells": 100034,
+     "reproduced": 100034,
+     "extra_rows": 0
+    },
+    "drug_era": {
+     "gold_rows": 376,
+     "gold_cells": 2256,
+     "reproduced": 2256,
+     "extra_rows": 0
+    }
+   }
+  },
+  "stg|d2|observations": {
+   "gold_cells": 1222028,
+   "reproduced": 1222028,
+   "share": 1.0,
+   "format_unrecoverable": 0,
+   "reference_extra_cells": 0,
+   "tables": {
+    "measurement": {
+     "gold_rows": 28334,
+     "gold_cells": 623348,
+     "reproduced": 623348,
+     "extra_rows": 0
+    },
+    "observation": {
+     "gold_rows": 29730,
+     "gold_cells": 594600,
+     "reproduced": 594600,
+     "extra_rows": 0
+    },
+    "dp_latest_labs": {
+     "gold_rows": 120,
+     "gold_cells": 4080,
+     "reproduced": 4080,
+     "extra_rows": 0
+    }
+   }
+  },
+  "stg|d2|immunizations": {
+   "gold_cells": 0,
+   "reproduced": 0,
+   "share": 0.0,
+   "format_unrecoverable": 0,
+   "reference_extra_cells": 0,
+   "tables": {}
+  },
+  "stg|d2|allergies": {
+   "gold_cells": 1040,
+   "reproduced": 1040,
+   "share": 1.0,
+   "format_unrecoverable": 0,
+   "reference_extra_cells": 0,
+   "tables": {
+    "observation": {
+     "gold_rows": 52,
+     "gold_cells": 1040,
+     "reproduced": 1040,
+     "extra_rows": 0
+    }
+   }
+  },
+  "stg|d3|patients": {
+   "gold_cells": 1852119,
+   "reproduced": 1851815,
+   "share": 0.9998,
+   "format_unrecoverable": 0,
+   "reference_extra_cells": 0,
+   "tables": {
+    "person": {
+     "gold_rows": 120,
+     "gold_cells": 2160,
+     "reproduced": 2160,
+     "extra_rows": 0
+    },
+    "death": {
+     "gold_rows": 7,
+     "gold_cells": 49,
+     "reproduced": 49,
+     "extra_rows": 0
+    },
+    "visit_occurrence": {
+     "gold_rows": 7456,
+     "gold_cells": 119296,
+     "reproduced": 119296,
+     "extra_rows": 0
+    },
+    "visit_detail": {
+     "gold_rows": 7481,
+     "gold_cells": 134658,
+     "reproduced": 134658,
+     "extra_rows": 0
+    },
+    "condition_occurrence": {
+     "gold_rows": 698,
+     "gold_cells": 10470,
+     "reproduced": 10470,
+     "extra_rows": 0
+    },
+    "procedure_occurrence": {
+     "gold_rows": 4203,
+     "gold_cells": 63045,
+     "reproduced": 63045,
+     "extra_rows": 0
+    },
+    "drug_exposure": {
+     "gold_rows": 4547,
+     "gold_cells": 100034,
+     "reproduced": 100034,
+     "extra_rows": 0
+    },
+    "measurement": {
+     "gold_rows": 32433,
+     "gold_cells": 713526,
+     "reproduced": 713222,
+     "extra_rows": 0
+    },
+    "observation": {
+     "gold_rows": 33790,
+     "gold_cells": 675800,
+     "reproduced": 675800,
+     "extra_rows": 0
+    },
+    "observation_period": {
+     "gold_rows": 120,
+     "gold_cells": 480,
+     "reproduced": 480,
+     "extra_rows": 0
+    },
+    "condition_era": {
+     "gold_rows": 698,
+     "gold_cells": 3490,
+     "reproduced": 3490,
+     "extra_rows": 0
+    },
+    "drug_era": {
+     "gold_rows": 376,
+     "gold_cells": 2256,
+     "reproduced": 2256,
+     "extra_rows": 0
+    },
+    "dp_condition_flags": {
+     "gold_rows": 120,
+     "gold_cells": 4320,
+     "reproduced": 4320,
+     "extra_rows": 0
+    },
+    "dp_latest_labs": {
+     "gold_rows": 120,
+     "gold_cells": 4080,
+     "reproduced": 4080,
+     "extra_rows": 0
+    },
+    "dp_utilisation_yearly": {
+     "gold_rows": 3427,
+     "gold_cells": 17135,
+     "reproduced": 17135,
+     "extra_rows": 0
+    },
+    "dp_coverage_months": {
+     "gold_rows": 120,
+     "gold_cells": 1320,
+     "reproduced": 1320,
+     "extra_rows": 0
+    }
+   }
+  },
+  "stg|d3|encounters": {
+   "gold_cells": 1834493,
+   "reproduced": 1834189,
+   "share": 0.9998,
+   "format_unrecoverable": 0,
+   "reference_extra_cells": 0,
+   "tables": {
+    "death": {
+     "gold_rows": 7,
+     "gold_cells": 49,
+     "reproduced": 49,
+     "extra_rows": 0
+    },
+    "visit_occurrence": {
+     "gold_rows": 7456,
+     "gold_cells": 119296,
+     "reproduced": 119296,
+     "extra_rows": 0
+    },
+    "visit_detail": {
+     "gold_rows": 7481,
+     "gold_cells": 134658,
+     "reproduced": 134658,
+     "extra_rows": 0
+    },
+    "condition_occurrence": {
+     "gold_rows": 698,
+     "gold_cells": 10470,
+     "reproduced": 10470,
+     "extra_rows": 0
+    },
+    "procedure_occurrence": {
+     "gold_rows": 4203,
+     "gold_cells": 63045,
+     "reproduced": 63045,
+     "extra_rows": 0
+    },
+    "drug_exposure": {
+     "gold_rows": 4547,
+     "gold_cells": 100034,
+     "reproduced": 100034,
+     "extra_rows": 0
+    },
+    "measurement": {
+     "gold_rows": 32433,
+     "gold_cells": 713526,
+     "reproduced": 713222,
+     "extra_rows": 0
+    },
+    "observation": {
+     "gold_rows": 33790,
+     "gold_cells": 675800,
+     "reproduced": 675800,
+     "extra_rows": 0
+    },
+    "observation_period": {
+     "gold_rows": 120,
+     "gold_cells": 480,
+     "reproduced": 480,
+     "extra_rows": 0
+    },
+    "dp_utilisation_yearly": {
+     "gold_rows": 3427,
+     "gold_cells": 17135,
+     "reproduced": 17135,
+     "extra_rows": 0
+    }
+   }
+  },
+  "stg|d3|conditions": {
+   "gold_cells": 98368,
+   "reproduced": 98368,
+   "share": 1.0,
+   "format_unrecoverable": 0,
+   "reference_extra_cells": 0,
+   "tables": {
+    "condition_occurrence": {
+     "gold_rows": 698,
+     "gold_cells": 10470,
+     "reproduced": 10470,
+     "extra_rows": 0
+    },
+    "observation": {
+     "gold_rows": 4008,
+     "gold_cells": 80160,
+     "reproduced": 80160,
+     "extra_rows": 0
+    },
+    "condition_era": {
+     "gold_rows": 698,
+     "gold_cells": 3490,
+     "reproduced": 3490,
+     "extra_rows": 0
+    },
+    "dp_condition_flags": {
+     "gold_rows": 118,
+     "gold_cells": 4248,
+     "reproduced": 4248,
+     "extra_rows": 0
+    }
+   }
+  },
+  "stg|d3|procedures": {
+   "gold_cells": 153223,
+   "reproduced": 153223,
+   "share": 1.0,
+   "format_unrecoverable": 0,
+   "reference_extra_cells": 0,
+   "tables": {
+    "procedure_occurrence": {
+     "gold_rows": 4203,
+     "gold_cells": 63045,
+     "reproduced": 63045,
+     "extra_rows": 0
+    },
+    "measurement": {
+     "gold_rows": 4099,
+     "gold_cells": 90178,
+     "reproduced": 90178,
+     "extra_rows": 0
+    }
+   }
+  },
+  "stg|d3|medications": {
+   "gold_cells": 102290,
+   "reproduced": 102290,
+   "share": 1.0,
+   "format_unrecoverable": 0,
+   "reference_extra_cells": 0,
+   "tables": {
+    "drug_exposure": {
+     "gold_rows": 4547,
+     "gold_cells": 100034,
+     "reproduced": 100034,
+     "extra_rows": 0
+    },
+    "drug_era": {
+     "gold_rows": 376,
+     "gold_cells": 2256,
+     "reproduced": 2256,
+     "extra_rows": 0
+    }
+   }
+  },
+  "stg|d3|observations": {
+   "gold_cells": 1222028,
+   "reproduced": 1221724,
+   "share": 0.9998,
+   "format_unrecoverable": 0,
+   "reference_extra_cells": 0,
+   "tables": {
+    "measurement": {
+     "gold_rows": 28334,
+     "gold_cells": 623348,
+     "reproduced": 623044,
+     "extra_rows": 0
+    },
+    "observation": {
+     "gold_rows": 29730,
+     "gold_cells": 594600,
+     "reproduced": 594600,
+     "extra_rows": 0
+    },
+    "dp_latest_labs": {
+     "gold_rows": 120,
+     "gold_cells": 4080,
+     "reproduced": 4080,
+     "extra_rows": 0
+    }
+   }
+  },
+  "stg|d3|immunizations": {
+   "gold_cells": 0,
+   "reproduced": 0,
+   "share": 0.0,
+   "format_unrecoverable": 0,
+   "reference_extra_cells": 0,
+   "tables": {}
+  },
+  "stg|d3|allergies": {
+   "gold_cells": 1040,
+   "reproduced": 1040,
+   "share": 1.0,
+   "format_unrecoverable": 0,
+   "reference_extra_cells": 0,
+   "tables": {
+    "observation": {
+     "gold_rows": 52,
+     "gold_cells": 1040,
+     "reproduced": 1040,
+     "extra_rows": 0
+    }
+   }
+  },
+  "wide|fhir|dp_condition_flags": {
+   "gold_cells": 4320,
+   "reproduced": 4320,
+   "share": 1.0
+  },
+  "wide|fhir|dp_latest_labs": {
+   "gold_cells": 4080,
+   "reproduced": 4080,
+   "share": 1.0
+  },
+  "wide|fhir|dp_utilisation_yearly": {
+   "gold_cells": 17135,
+   "reproduced": 17135,
+   "share": 1.0
+  },
+  "wide|fhir|dp_coverage_months": {
+   "gold_cells": 1320,
+   "reproduced": 1320,
+   "share": 1.0
+  },
+  "wide|claims|dp_condition_flags": {
+   "gold_cells": 4320,
+   "reproduced": 4320,
+   "share": 1.0
+  },
+  "wide|claims|dp_latest_labs": {
+   "gold_cells": 3720,
+   "reproduced": 3720,
+   "share": 1.0
+  },
+  "wide|claims|dp_utilisation_yearly": {
+   "gold_cells": 0,
+   "reproduced": 0,
+   "share": 0.0
+  },
+  "wide|claims|dp_coverage_months": {
+   "gold_cells": 1320,
+   "reproduced": 1320,
+   "share": 1.0
+  },
+  "wide|dialect|dp_condition_flags": {
+   "gold_cells": 4320,
+   "reproduced": 4320,
+   "share": 1.0
+  },
+  "wide|dialect|dp_latest_labs": {
+   "gold_cells": 4080,
+   "reproduced": 4080,
+   "share": 1.0
+  },
+  "wide|dialect|dp_utilisation_yearly": {
+   "gold_cells": 17135,
+   "reproduced": 17135,
+   "share": 1.0
+  },
+  "wide|dialect|dp_coverage_months": {
+   "gold_cells": 1320,
+   "reproduced": 1320,
+   "share": 1.0
+  }
+ }
+}

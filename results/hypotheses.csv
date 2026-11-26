@@ -1,0 +1,12 @@
+hypothesis,quantity,n,count
+H1,share wrong among integrations passing build and all tests,751,80
+H2,exact: R4 vs STU3 (first only / second only),108,6/5
+H2,exact: R4 vs claims (first only / second only),54,13/12
+H3,exact: dialect 1 vs 2 (first only / second only),126,1/16
+H3,exact: dialect 2 vs 3 (first only / second only),126,8/14
+H4,build pass A1 -> A2 (count of n),288,249 -> 283
+H4,exact A1 -> A2 (count of n),288,198 -> 224
+H5,built staging integrations with content of existing rows stable,614,613
+H5,built staging integrations with generated keys of existing rows stable,614,0
+H6,built wide extensions that disturb an existing column,198,0
+H7,"exact: A3 vs A2 (first only / second only), two-sided",288,1/39

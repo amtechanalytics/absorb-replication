@@ -1,0 +1,759 @@
+{
+ "n": {
+  "all": 864,
+  "stg": 666,
+  "wide": 198,
+  "tasks_stg": 37,
+  "tasks_wide": 11
+ },
+ "stg_tot": {
+  "built": 614,
+  "exact": 486,
+  "tests": 553
+ },
+ "format_arm": {
+  "fhir_r4|A1": {
+   "n": 36,
+   "exact": 10,
+   "lo": 15.8,
+   "hi": 44.0,
+   "build": 22,
+   "tests": 20,
+   "silent": 10,
+   "meanf1": 0.583
+  },
+  "fhir_r4|A2": {
+   "n": 36,
+   "exact": 18,
+   "lo": 34.5,
+   "hi": 65.5,
+   "build": 34,
+   "tests": 32,
+   "silent": 14,
+   "meanf1": 0.848
+  },
+  "fhir_r4|A3": {
+   "n": 36,
+   "exact": 29,
+   "lo": 65.0,
+   "hi": 90.2,
+   "build": 33,
+   "tests": 31,
+   "silent": 2,
+   "meanf1": 0.913
+  },
+  "fhir_r4|all": {
+   "n": 108,
+   "exact": 57,
+   "tasks": 6
+  },
+  "fhir_stu3|A1": {
+   "n": 36,
+   "exact": 14,
+   "lo": 24.8,
+   "hi": 55.1,
+   "build": 27,
+   "tests": 26,
+   "silent": 12,
+   "meanf1": 0.721
+  },
+  "fhir_stu3|A2": {
+   "n": 36,
+   "exact": 16,
+   "lo": 29.5,
+   "hi": 60.4,
+   "build": 34,
+   "tests": 32,
+   "silent": 16,
+   "meanf1": 0.866
+  },
+  "fhir_stu3|A3": {
+   "n": 36,
+   "exact": 28,
+   "lo": 61.9,
+   "hi": 88.3,
+   "build": 32,
+   "tests": 31,
+   "silent": 3,
+   "meanf1": 0.86
+  },
+  "fhir_stu3|all": {
+   "n": 108,
+   "exact": 58,
+   "tasks": 6
+  },
+  "claims|A1": {
+   "n": 24,
+   "exact": 12,
+   "lo": 31.4,
+   "hi": 68.6,
+   "build": 24,
+   "tests": 6,
+   "silent": 0,
+   "meanf1": 0.921
+  },
+  "claims|A2": {
+   "n": 24,
+   "exact": 13,
+   "lo": 35.1,
+   "hi": 72.1,
+   "build": 24,
+   "tests": 12,
+   "silent": 6,
+   "meanf1": 0.908
+  },
+  "claims|A3": {
+   "n": 24,
+   "exact": 22,
+   "lo": 74.2,
+   "hi": 97.7,
+   "build": 23,
+   "tests": 23,
+   "silent": 1,
+   "meanf1": 0.951
+  },
+  "claims|all": {
+   "n": 72,
+   "exact": 47,
+   "tasks": 4
+  },
+  "d1|A1": {
+   "n": 42,
+   "exact": 39,
+   "lo": 81.0,
+   "hi": 97.5,
+   "build": 40,
+   "tests": 39,
+   "silent": 0,
+   "meanf1": 0.952
+  },
+  "d1|A2": {
+   "n": 42,
+   "exact": 41,
+   "lo": 87.7,
+   "hi": 99.6,
+   "build": 42,
+   "tests": 41,
+   "silent": 0,
+   "meanf1": 0.982
+  },
+  "d1|A3": {
+   "n": 42,
+   "exact": 40,
+   "lo": 84.2,
+   "hi": 98.7,
+   "build": 42,
+   "tests": 40,
+   "silent": 0,
+   "meanf1": 1.0
+  },
+  "d1|all": {
+   "n": 126,
+   "exact": 120,
+   "tasks": 7
+  },
+  "d2|A1": {
+   "n": 42,
+   "exact": 28,
+   "lo": 51.6,
+   "hi": 79.0,
+   "build": 29,
+   "tests": 28,
+   "silent": 0,
+   "meanf1": 0.69
+  },
+  "d2|A2": {
+   "n": 42,
+   "exact": 38,
+   "lo": 77.9,
+   "hi": 96.2,
+   "build": 41,
+   "tests": 39,
+   "silent": 1,
+   "meanf1": 0.976
+  },
+  "d2|A3": {
+   "n": 42,
+   "exact": 39,
+   "lo": 81.0,
+   "hi": 97.5,
+   "build": 42,
+   "tests": 40,
+   "silent": 1,
+   "meanf1": 1.0
+  },
+  "d2|all": {
+   "n": 126,
+   "exact": 105,
+   "tasks": 7
+  },
+  "d3|A1": {
+   "n": 42,
+   "exact": 29,
+   "lo": 54.0,
+   "hi": 80.9,
+   "build": 41,
+   "tests": 35,
+   "silent": 6,
+   "meanf1": 0.83
+  },
+  "d3|A2": {
+   "n": 42,
+   "exact": 32,
+   "lo": 61.5,
+   "hi": 86.5,
+   "build": 42,
+   "tests": 38,
+   "silent": 6,
+   "meanf1": 0.95
+  },
+  "d3|A3": {
+   "n": 42,
+   "exact": 38,
+   "lo": 77.9,
+   "hi": 96.2,
+   "build": 42,
+   "tests": 40,
+   "silent": 2,
+   "meanf1": 1.0
+  },
+  "d3|all": {
+   "n": 126,
+   "exact": 99,
+   "tasks": 7
+  }
+ },
+ "model_arm": {
+  "claude-sonnet-5-5|A1": {
+   "n": 74,
+   "build": 64,
+   "tests": 55,
+   "exact": 50,
+   "silent": 7,
+   "sw_share": 12.7,
+   "sw_lo": 6.3,
+   "sw_hi": 24.0,
+   "turns": 1,
+   "exact_pct": 67.6
+  },
+  "claude-sonnet-5-5|A2": {
+   "n": 74,
+   "build": 74,
+   "tests": 66,
+   "exact": 59,
+   "silent": 10,
+   "sw_share": 15.2,
+   "sw_lo": 8.4,
+   "sw_hi": 25.7,
+   "turns": 1.31,
+   "exact_pct": 79.7
+  },
+  "claude-sonnet-5-5|A3": {
+   "n": 74,
+   "build": 74,
+   "tests": 74,
+   "exact": 72,
+   "silent": 2,
+   "sw_share": 2.7,
+   "sw_lo": 0.7,
+   "sw_hi": 9.3,
+   "turns": 1.05,
+   "exact_pct": 97.3
+  },
+  "claude-sonnet-5-5|all": {
+   "n": 222,
+   "build": 212,
+   "tests": 195,
+   "exact": 181,
+   "silent": 19,
+   "sw_share": 9.7,
+   "sw_lo": 6.3,
+   "sw_hi": 14.7,
+   "turns": 1.12,
+   "exact_pct": 81.5
+  },
+  "gpt-6.1-sol|A1": {
+   "n": 74,
+   "build": 73,
+   "tests": 65,
+   "exact": 57,
+   "silent": 12,
+   "sw_share": 18.5,
+   "sw_lo": 10.9,
+   "sw_hi": 29.6,
+   "turns": 1,
+   "exact_pct": 77.0
+  },
+  "gpt-6.1-sol|A2": {
+   "n": 74,
+   "build": 74,
+   "tests": 68,
+   "exact": 58,
+   "silent": 14,
+   "sw_share": 20.6,
+   "sw_lo": 12.7,
+   "sw_hi": 31.6,
+   "turns": 1.19,
+   "exact_pct": 78.4
+  },
+  "gpt-6.1-sol|A3": {
+   "n": 74,
+   "build": 74,
+   "tests": 74,
+   "exact": 71,
+   "silent": 3,
+   "sw_share": 4.1,
+   "sw_lo": 1.4,
+   "sw_hi": 11.3,
+   "turns": 1,
+   "exact_pct": 95.9
+  },
+  "gpt-6.1-sol|all": {
+   "n": 222,
+   "build": 221,
+   "tests": 207,
+   "exact": 186,
+   "silent": 29,
+   "sw_share": 14.0,
+   "sw_lo": 9.9,
+   "sw_hi": 19.4,
+   "turns": 1.06,
+   "exact_pct": 83.8
+  },
+  "openai/gpt-oss-120b|A1": {
+   "n": 74,
+   "build": 46,
+   "tests": 34,
+   "exact": 25,
+   "silent": 9,
+   "sw_share": 26.5,
+   "sw_lo": 14.6,
+   "sw_hi": 43.1,
+   "turns": 1,
+   "exact_pct": 33.8
+  },
+  "openai/gpt-oss-120b|A2": {
+   "n": 74,
+   "build": 69,
+   "tests": 60,
+   "exact": 41,
+   "silent": 19,
+   "sw_share": 31.7,
+   "sw_lo": 21.3,
+   "sw_hi": 44.2,
+   "turns": 2.03,
+   "exact_pct": 55.4
+  },
+  "openai/gpt-oss-120b|A3": {
+   "n": 74,
+   "build": 66,
+   "tests": 57,
+   "exact": 53,
+   "silent": 4,
+   "sw_share": 7.0,
+   "sw_lo": 2.8,
+   "sw_hi": 16.7,
+   "turns": 1.97,
+   "exact_pct": 71.6
+  },
+  "openai/gpt-oss-120b|all": {
+   "n": 222,
+   "build": 181,
+   "tests": 151,
+   "exact": 119,
+   "silent": 32,
+   "sw_share": 21.2,
+   "sw_lo": 15.4,
+   "sw_hi": 28.4,
+   "turns": 1.67,
+   "exact_pct": 53.6
+  }
+ },
+ "arm_stg": {
+  "A1": {
+   "n": 222,
+   "testfail": 29,
+   "exact": 126,
+   "nobuild": 39,
+   "silent": 28,
+   "passing": 154,
+   "sw_share": 18.2,
+   "sw_lo": 12.9,
+   "sw_hi": 25.0,
+   "exact_all": 132,
+   "exact_pct": 59.5,
+   "exact_lo": 52.9,
+   "exact_hi": 65.7,
+   "build": 183
+  },
+  "A2": {
+   "n": 222,
+   "testfail": 23,
+   "silent": 43,
+   "exact": 151,
+   "nobuild": 5,
+   "passing": 194,
+   "sw_share": 22.2,
+   "sw_lo": 16.9,
+   "sw_hi": 28.5,
+   "exact_all": 158,
+   "exact_pct": 71.2,
+   "exact_lo": 64.9,
+   "exact_hi": 76.7,
+   "build": 217
+  },
+  "A3": {
+   "n": 222,
+   "exact": 196,
+   "silent": 9,
+   "nobuild": 8,
+   "testfail": 9,
+   "passing": 205,
+   "sw_share": 4.4,
+   "sw_lo": 2.3,
+   "sw_hi": 8.1,
+   "exact_all": 196,
+   "exact_pct": 88.3,
+   "exact_lo": 83.4,
+   "exact_hi": 91.9,
+   "build": 214
+  },
+  "all": {
+   "n": 666,
+   "testfail": 61,
+   "silent": 80,
+   "exact": 473,
+   "nobuild": 52,
+   "passing": 553,
+   "sw_share": 14.5,
+   "sw_lo": 11.8,
+   "sw_hi": 17.6,
+   "exact_all": 486,
+   "exact_pct": 73.0,
+   "exact_lo": 69.5,
+   "exact_hi": 76.2,
+   "build": 614
+  }
+ },
+ "sw_boot": [
+  7.9,
+  22.6
+ ],
+ "sw_tasks": {
+  "tasks_with_any": 16,
+  "tasks": 37
+ },
+ "pairs": {
+  "A2 vs A1 (all)": {
+   "pairs": 288,
+   "first_only": 29,
+   "second_only": 3,
+   "p": 2.5560148060321808e-06,
+   "exact_first": 224,
+   "exact_second": 198,
+   "build_first": 283,
+   "build_second": 249,
+   "p_holm": 1.2780074030160904e-05
+  },
+  "A3 vs A2 (all)": {
+   "pairs": 288,
+   "first_only": 39,
+   "second_only": 1,
+   "p": 7.457856554538012e-11,
+   "exact_first": 262,
+   "exact_second": 224,
+   "build_first": 280,
+   "build_second": 283,
+   "p_holm": 4.474713932722807e-10
+  },
+  "A2 vs A1 (stg)": {
+   "pairs": 222,
+   "first_only": 29,
+   "second_only": 3,
+   "p": 2.5560148060321808e-06,
+   "exact_first": 158,
+   "exact_second": 132,
+   "build_first": 217,
+   "build_second": 183
+  },
+  "A3 vs A2 (stg)": {
+   "pairs": 222,
+   "first_only": 39,
+   "second_only": 1,
+   "p": 7.457856554538012e-11,
+   "exact_first": 196,
+   "exact_second": 158,
+   "build_first": 214,
+   "build_second": 217
+  },
+  "R4 vs STU3": {
+   "pairs": 108,
+   "first_only": 5,
+   "second_only": 6,
+   "p": 1.0,
+   "exact_first": 57,
+   "exact_second": 58,
+   "build_first": 89,
+   "build_second": 93,
+   "p_holm": 1.0
+  },
+  "R4 vs claims": {
+   "pairs": 54,
+   "first_only": 12,
+   "second_only": 13,
+   "p": 1.0,
+   "exact_first": 36,
+   "exact_second": 37,
+   "build_first": 42,
+   "build_second": 54,
+   "p_holm": 1.0
+  },
+  "d1 vs d2": {
+   "pairs": 126,
+   "first_only": 16,
+   "second_only": 1,
+   "p": 0.000274658203125,
+   "exact_first": 120,
+   "exact_second": 105,
+   "build_first": 124,
+   "build_second": 112,
+   "p_holm": 0.0010986328125
+  },
+  "d2 vs d3": {
+   "pairs": 126,
+   "first_only": 14,
+   "second_only": 8,
+   "p": 0.28627872467041016,
+   "exact_first": 105,
+   "exact_second": 99,
+   "build_first": 112,
+   "build_second": 125,
+   "p_holm": 0.8588361740112305
+  }
+ },
+ "sw_sev": {
+  "n": 80,
+  "median_pct": 0.9,
+  "lt1pct": 43,
+  "ge10pct": 28,
+  "ge50pct": 10,
+  "min_cells": 3,
+  "with_extra_rows": 22
+ },
+ "sw_by_target": [
+  [
+   "observations",
+   31
+  ],
+  [
+   "patients",
+   16
+  ],
+  [
+   "encounters",
+   15
+  ],
+  [
+   "allergies",
+   9
+  ],
+  [
+   "medications",
+   4
+  ],
+  [
+   "conditions",
+   3
+  ],
+  [
+   "procedures",
+   2
+  ]
+ ],
+ "sw_by_format": [
+  [
+   "fhir_stu3",
+   31
+  ],
+  [
+   "fhir_r4",
+   26
+  ],
+  [
+   "d3",
+   14
+  ],
+  [
+   "claims",
+   7
+  ],
+  [
+   "d2",
+   2
+  ]
+ ],
+ "repair": {
+  "A2": {
+   "n": 222,
+   "first": {
+    "testfail": 24,
+    "nobuild": 37,
+    "exact": 132,
+    "silent": 29
+   },
+   "needed_repair": 73,
+   "after": {
+    "testfail": 23,
+    "silent": 16,
+    "exact": 29,
+    "nobuild": 5
+   },
+   "turn_hist": {
+    "3": 40,
+    "2": 33,
+    "1": 149
+   },
+   "first_silent_final": {
+    "silent": 29
+   },
+   "first_exact_testfail": 7
+  },
+  "A3": {
+   "n": 222,
+   "first": {
+    "exact": 180,
+    "nobuild": 30,
+    "testfail": 6,
+    "silent": 6
+   },
+   "needed_repair": 50,
+   "after": {
+    "silent": 4,
+    "nobuild": 8,
+    "exact": 29,
+    "testfail": 9
+   },
+   "turn_hist": {
+    "1": 172,
+    "2": 24,
+    "3": 26
+   },
+   "first_silent_final": {
+    "silent": 6
+   },
+   "first_exact_testfail": 0
+  }
+ },
+ "needs_repair_rule_check": [
+  [
+   [
+    "exact",
+    false
+   ],
+   289
+  ],
+  [
+   [
+    "nobuild",
+    true
+   ],
+   67
+  ],
+  [
+   [
+    "silent",
+    false
+   ],
+   32
+  ],
+  [
+   [
+    "testfail",
+    true
+   ],
+   30
+  ],
+  [
+   [
+    "exact",
+    true
+   ],
+   23
+  ],
+  [
+   [
+    "silent",
+    true
+   ],
+   3
+  ]
+ ],
+ "exact_testfail": [
+  [
+   [
+    "claims",
+    "procedures",
+    "A1"
+   ],
+   4
+  ],
+  [
+   [
+    "claims",
+    "procedures",
+    "A2"
+   ],
+   4
+  ],
+  [
+   [
+    "claims",
+    "medications",
+    "A2"
+   ],
+   3
+  ],
+  [
+   [
+    "claims",
+    "medications",
+    "A1"
+   ],
+   2
+  ]
+ ],
+ "keys": {
+  "built": 614,
+  "content_stable": 613,
+  "key_stable": 0
+ },
+ "wide": {
+  "n": 198,
+  "exact": 198,
+  "first_turn_exact": 198,
+  "turns1": 198
+ },
+ "eval_seconds": {
+  "n": 1051,
+  "median": 28.6,
+  "p90": 47.5
+ },
+ "cells": {
+  "stg_recoverable_median": 153223.0,
+  "min": 1040,
+  "max": 1852119
+ },
+ "ledger_keys": [
+  "batch",
+  "cell_id",
+  "cost",
+  "kind",
+  "mode",
+  "model",
+  "provider",
+  "receipt",
+  "stage",
+  "ts",
+  "usage"
+ ]
+}

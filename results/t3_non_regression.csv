@@ -1,0 +1,40 @@
+scope,format_or_control,table,n_or_rows,content_stable_or_diff_rows,content_stable_share,wilson_lo,wilson_hi,key_stable_or_keys_equal,key_stable_share,key_wilson_lo,key_wilson_hi
+integration,(all),,614,613,0.9984,0.9908,0.9997,0,0.0000,0.0000,0.0062
+integration,claims,,71,71,1.0000,0.9487,1.0000,0,0.0000,0.0000,0.0513
+integration,d1,,124,124,1.0000,0.9700,1.0000,0,0.0000,0.0000,0.0300
+integration,d2,,112,112,1.0000,0.9668,1.0000,0,0.0000,0.0000,0.0332
+integration,d3,,125,125,1.0000,0.9702,1.0000,0,0.0000,0.0000,0.0298
+integration,fhir_r4,,89,88,0.9888,0.9391,0.9980,0,0.0000,0.0000,0.0414
+integration,fhir_stu3,,93,93,1.0000,0.9603,1.0000,0,0.0000,0.0000,0.0397
+control,rebuild of the pre-acquisition pipeline,condition_era,2078,0,,,,False,,,
+control,gold build against the pre-acquisition pipeline,condition_era,2078,0,,,,False,,,
+control,rebuild of the pre-acquisition pipeline,condition_occurrence,2078,0,,,,False,,,
+control,gold build against the pre-acquisition pipeline,condition_occurrence,2078,0,,,,False,,,
+control,rebuild of the pre-acquisition pipeline,death,13,0,,,,True,,,
+control,gold build against the pre-acquisition pipeline,death,13,0,,,,False,,,
+control,rebuild of the pre-acquisition pipeline,dp_condition_flags,480,0,,,,True,,,
+control,gold build against the pre-acquisition pipeline,dp_condition_flags,480,0,,,,False,,,
+control,rebuild of the pre-acquisition pipeline,dp_coverage_months,480,0,,,,True,,,
+control,gold build against the pre-acquisition pipeline,dp_coverage_months,480,0,,,,False,,,
+control,rebuild of the pre-acquisition pipeline,dp_latest_labs,480,0,,,,True,,,
+control,gold build against the pre-acquisition pipeline,dp_latest_labs,480,0,,,,False,,,
+control,rebuild of the pre-acquisition pipeline,dp_utilisation_yearly,9813,0,,,,True,,,
+control,gold build against the pre-acquisition pipeline,dp_utilisation_yearly,9813,0,,,,False,,,
+control,rebuild of the pre-acquisition pipeline,drug_era,1381,0,,,,False,,,
+control,gold build against the pre-acquisition pipeline,drug_era,1381,0,,,,False,,,
+control,rebuild of the pre-acquisition pipeline,drug_exposure,11841,0,,,,False,,,
+control,gold build against the pre-acquisition pipeline,drug_exposure,11841,0,,,,False,,,
+control,rebuild of the pre-acquisition pipeline,measurement,103826,0,,,,False,,,
+control,gold build against the pre-acquisition pipeline,measurement,103826,0,,,,False,,,
+control,rebuild of the pre-acquisition pipeline,observation,91995,0,,,,False,,,
+control,gold build against the pre-acquisition pipeline,observation,91995,0,,,,False,,,
+control,rebuild of the pre-acquisition pipeline,observation_period,480,0,,,,True,,,
+control,gold build against the pre-acquisition pipeline,observation_period,480,0,,,,False,,,
+control,rebuild of the pre-acquisition pipeline,person,480,0,,,,True,,,
+control,gold build against the pre-acquisition pipeline,person,480,0,,,,False,,,
+control,rebuild of the pre-acquisition pipeline,procedure_occurrence,14037,0,,,,False,,,
+control,gold build against the pre-acquisition pipeline,procedure_occurrence,14037,0,,,,False,,,
+control,rebuild of the pre-acquisition pipeline,visit_detail,22096,0,,,,False,,,
+control,gold build against the pre-acquisition pipeline,visit_detail,22096,0,,,,False,,,
+control,rebuild of the pre-acquisition pipeline,visit_occurrence,21986,0,,,,False,,,
+control,gold build against the pre-acquisition pipeline,visit_occurrence,21986,0,,,,False,,,
